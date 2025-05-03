@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saylani Registration Form - SMIT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.social-icons {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+}
+
+.portal-button {
+  border: 1px solid #1d4ed8;
+  color: #1d4ed8;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background: white;
+  float: right;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-section img {
+  height: 50px;
+}
+
+.title-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.title-section h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.title-section p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 500;
+}
+
+nav a.active {
+  color: #3c9b3b;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #3c9b3b;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+label {
+  width: 100%;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #3c9b3b;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #1d4ed8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(29, 78, 216, 0.3);
+}
+
+.half-width {
+  width: 48%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.upload-note {
+  font-size: 12px;
+  color: gray;
+}
+
+.terms {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.submit-btn {
+  background-color: #3c9b3b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #328432;
+}
+
+@media (max-width: 768px) {
+  .half-width {
+    width: 100%;
+  }
+
+  .portal-button {
+    position: static;
+    float: none;
+    margin-top: 10px;
+  }
+
+  .header-wrapper {
+    flex-direction: column;
+}
+
+</style>
+<body>
+  <header>
+    <div class="portal-button">Student portal</div>
+    <div class="header-wrapper">
+      <div class="social-icons">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+      </div>
+      <div class="logo-section">
+        <img src="https://www.saylaniwelfare.com/static/media/logo.22bf709605809177256c.png" alt="Saylani Logo">
+        <div class="title-section">
+          <h1>Saylani Registration Form - SMIT</h1>
+          <p>Services - Education - Registration</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <a href="#" class="active">Registration</a>
+    <a href="#">Download ID Card</a>
+    <a href="#">Results</a>
+  </nav>
+
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form>
+      <div class="half-width">
+        <label>Select country</label>
+        <select>
+          <option>Select country</option>
+          <option>Pakistan</option>
+          <option>Turkey</option>
+        </select>
+      </div>
+      <div class="half-width">
+        <label>Select city</label>
+        <select>
+          <option>Select city</option>
+          <option>Quetta</option>
+          <option>Karachi</option>
+          <option>Lahore</option>
+          <option>Islamabad</option>
+          <option>Rawalpindi</option>
+        </select>
+      </div>
+    
+      <div class="half-width">
+        <label>Select course or event</label>
+        <select>
+          <option>Select course or event</option>
+          <option>Web & Mobile Application Development</option>
+          <option>Graphic design</option>
+          <option>AI Chatbot development</option>
+        </select>
+      </div>
+      <div class="half-width">
+        <label>Computer proficiency</label>
+        <select>
+          <option>Select your computer proficiency</option>
+          <option>None</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+      </div>
+    
+      <div class="half-width">
+        <label>Full name</label>
+        <input type="text" placeholder="Enter your full name">
+      </div>
+      <div class="half-width">
+        <label>Father name</label>
+        <input type="text" placeholder="Enter your father's name">
+      </div>
+    
+      <div class="half-width">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+      <div class="half-width">
+        <label>Phone</label>
+        <input type="number" placeholder="Enter your phone number">
+      </div>
+    
+      <div class="half-width">
+        <label>CNIC</label>
+        <input type="text" placeholder="Enter your CNIC">
+      </div>
+      <div class="half-width">
+        <label>Father's CNIC (optional)</label>
+        <input type="number" placeholder="Father's CNIC (optional)">
+      </div>
+    
+      <div class="half-width">
+        <label>Date of Birth</label>
+        <input type="date">
+      </div>
+      <div class="half-width">
+        <label>Gender</label>
+        <select>
+          <option>Select gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+    
+      <div class="full-width">
+        <label>Address</label>
+        <textarea placeholder="Enter your address"></textarea>
+      </div>
+    
+      <div class="full-width">
+        <label>Last qualification</label>
+        <select>
+          <option>Matric</option>
+          <option>Intermediate</option>
+          <option>Undergraduate</option>
+          <option>Masters</option>
+          <option>PHD</option>
+          <option>Other</option>
+        </select>
+      </div>
+    
+      <div class="full-width">
+        <label>Do you have a Laptop?</label>
+        <select>
+          <option>Select an option</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    
+      <div class="full-width">
+        <label>Picture</label>
+        <input type="file">
+        <div class="upload-note">
+          With white or blue background • Less than 1MB • JPG/PNG • Passport size • No glasses
+        </div>
+      </div>
+    
+      <div class="terms">
+        <ol>
+          <li>I declare all info is true and I will follow SMIT rules.</li>
+          <li>I accept the responsibility of good conduct during course.</li>
+          <li>Misconduct will cancel admission.</li>
+          <li>I will complete the final project.</li>
+          <li>Female students must wear abaya/hijab.</li>
+        </ol>
+      </div>
+    
+      <div class="checkbox">
+        <input type="checkbox" required> &nbsp; I'm not a robot
+      </div>
+    
+      <button type="submit" class="submit-btn">SUBMIT</button>
+    </form>
+  </div>
+</body>
+</html>
